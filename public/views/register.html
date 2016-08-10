@@ -1,0 +1,56 @@
+<style>
+    .main{
+        background:white;
+        opacity:.9;
+        padding:3%;
+        margin:1%;
+    }
+</style>
+<div class='row'>
+
+    <div class='container col-md-offset-2 center'>
+        <h3 class='chip white hovarable black-text card flow-text'> Register</h3>
+        <div class='col-md-8 col-xs-12 main'>
+            <h4> Enter your details below </h4>
+            <label for='name' class='black-text'> Full Name </label>  <br>
+            <input name='name' type='text' placeholder='your name and surname' class='form-control'>
+            <br>
+            <label for='name' class='black-text'> Music Name </label>  <br>
+            <small> If you have a name you are artistically known by </small><br>
+            <input name='name' type='text' placeholder='enter your alias' class='form-control'>
+            <br>
+            <label for='studio_name' class='black-text'> Studio Name </label>  <br>
+            <input name='studio_name' type='text' placeholder='name of your bussiness' class='form-control'>
+            <br>
+            <label for='celphone' class='black-text'> Cellphone Number</label>  <br>
+            <input name='cellphone' type='text' placeholder='enter your contact number' class='form-control'>
+            <br>
+            <br>
+            <div class='row'>
+                <div class='col m12 s12 card-panel grey darken-2'>
+                    <h5> Address</h5>
+                    <div class='valign-wrapper'>
+                        <label for='city' class='black-text'> City </label>  <br>
+                        <input name='city' type='text' placeholder='Your city' class='valign col s12 m6'>
+                        <label for='suburb' class='black-text'> Suburb </label>  <br>
+                        <input name='suburb' type='text' placeholder='Your suburb' class='valign col s12 m6'>
+                    </div>
+                    <label for='street' class='black-text'> Street</label>  <br>
+                    <input name='street' type='text' placeholder='your street address' class='col s12 m12'>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col m6 s12'>
+                    <a href='#/' class='col m12 s12 btn red white-text'> Back</a>
+                </div>
+                <div class='col m6 s12'>
+                    <button class='col m12 s12 btn red white-text' ng-click='newStudio();'>Done</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<style type='text/css'>
+    .studio{
+        background:white;
+        padding:1%;
+        margin:1%;
+        border:1px solid black;
+        box-shadow: 1px 1px 1px 1px black;
+        opacity:.9;
+     }
+     input[type=text]{
+        background:rgba(245, 245, 245, 0.11);
+        border-bottom-color: tomato;
+
+     }
+</style>
+
+<div class='row center'>
+
+    <div class='container'>
+        <h3 class='chip  white hovarable black-text card flow-text'> Studios </h3>
+
+        <div class='collection'>
+            <div class='valign-wrapper red'>
+                <span class='valign  col m2 s4 red white-text'>
+                    <h5> search </h5>
+                </span>
+                <span class='valign col m10 s8 white'>
+                    <input type='text' placeholder='Find a studio ...' class='center' ng-keyup ='search();' ng-model='searchtext'>
+                </span>
+            </div>
+            <div ng-repeat='studio in studios;' class='collection-item' >
+                <h4>{{studio.name}}<br>
+                    <small>{{studio.contact}}</small>
+                </h4>
+                <small>{{studio.location.suburb}}<br>
+                       {{studio.location.street}}
+                </small>
+            </div>
+            <a href='#/'><button class='col m12 s12 red btn'> Back</button></a>
+        </div>
+
+    </div>
+
+</div>
+
+
